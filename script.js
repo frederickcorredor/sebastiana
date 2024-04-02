@@ -1,4 +1,5 @@
-alert('INSTRUCCIONES: Gira la pantalla, para saltar presiona el boton tactil o barra espaciadora en pc y evita que Sebastian se coma un pene')
+alert('INSTRUCCIONES: Gira la pantalla, para saltar presiona el boton tactil o barra espaciadora en pc evita que Sebastian se coma un pene')
+alert('evita que Sebastian se coma un pene')
 
 var canvas;
 var ctx;
@@ -202,7 +203,7 @@ function RevisarColisiones(){
 				ctx.globalAlpha = 1;
 				ctx.fillStyle ="white";
 				ctx.font = "bold 30px sans-serif";
-				ctx.fillText("Sebastian Brinca Penes Pulse ENTER para reiniciar",canvas.width/2 -165,canvas.height/2);
+				ctx.fillText("Sebastian Brinca Penes <br> Pulse ENTER para reiniciar",canvas.width/2 -165,canvas.height/2);
 				ctx.restore();
 			}
 		}
