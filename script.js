@@ -1,4 +1,4 @@
-alert('INSTRUCCIONES: Gira la pantalla, para saltar presiona el boton tactil o barra espaciadora en pc')
+alert('INSTRUCCIONES: Gira la pantalla, para saltar presiona el boton tactil o barra espaciadora en pc y evita que Sebastian se coma un pene')
 
 var canvas;
 var ctx;
