@@ -1,4 +1,4 @@
-alert('INSTRUCCIONES: presiona BARRA ESPACIADORA o la tecla hacia Arriba para saltar, tambien tiene disponible un botón táctil')
+alert('INSTRUCCIONES: Gira la pantalla, para saltar presiona el boton tactil o barra espaciadora en pc')
 
 var canvas;
 var ctx;
@@ -76,8 +76,8 @@ function InicializarJSON(){
 	dinosaurio = {
 		x:PisoX,
 		y:PisoY,
-		width: 30,
-		height:38
+		width: 60,
+		height:76
 	}
 	nubes1 = {
 		x:0,
@@ -94,12 +94,12 @@ function InicializarJSON(){
 }
 function CrearArbol(){
 	if(CrearSigArbol){
-		var aleatorio = Math.random() * ((canvas.width+200) - canvas.width) + canvas.width;
+		var aleatorio = Math.random() * ((canvas.width+300) - canvas.width) + canvas.width;
 		arbol.push({
 			x:aleatorio,
 			y:PisoY-35,
-			width:50,
-			height:70
+			width:75,
+			height:105
 		});
 		CrearSigArbol=false;
 	}
@@ -202,7 +202,7 @@ function RevisarColisiones(){
 				ctx.globalAlpha = 1;
 				ctx.fillStyle ="white";
 				ctx.font = "bold 30px sans-serif";
-				ctx.fillText("Pulse ENTER para reiniciar",canvas.width/2 -165,canvas.height/2);
+				ctx.fillText("Sebastian Brinca Penes Pulse ENTER para reiniciar",canvas.width/2 -165,canvas.height/2);
 				ctx.restore();
 			}
 		}
