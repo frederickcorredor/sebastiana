@@ -1,5 +1,6 @@
-alert('INSTRUCCIONES: Gira la pantalla, para saltar presiona el boton tactil o barra espaciadora en pc evita que Sebastian se coma un pene')
-alert('evita que Sebastian se coma un pene')
+alert('INSTRUCCIONES: Gira la pantalla.
+Para saltar presiona el boton tactil o barra espaciadora en pc')
+alert('Evita que Sebastian se coma un pene')
 
 var canvas;
 var ctx;
@@ -77,8 +78,8 @@ function InicializarJSON(){
 	dinosaurio = {
 		x:PisoX,
 		y:PisoY,
-		width: 60,
-		height:76
+		width: 70,
+		height:96
 	}
 	nubes1 = {
 		x:0,
@@ -99,8 +100,8 @@ function CrearArbol(){
 		arbol.push({
 			x:aleatorio,
 			y:PisoY-35,
-			width:75,
-			height:105
+			width:50,
+			height:75
 		});
 		CrearSigArbol=false;
 	}
@@ -203,7 +204,7 @@ function RevisarColisiones(){
 				ctx.globalAlpha = 1;
 				ctx.fillStyle ="white";
 				ctx.font = "bold 30px sans-serif";
-				ctx.fillText("Sebastian Brinca Penes <br> Pulse ENTER para reiniciar",canvas.width/2 -165,canvas.height/2);
+				ctx.fillText("Sebastian Brinca Penes Pulse",canvas.width/2 -165,canvas.height/2);
 				ctx.restore();
 			}
 		}
