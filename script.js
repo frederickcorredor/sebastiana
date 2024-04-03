@@ -1,6 +1,4 @@
-alert('INSTRUCCIONES: Gira la pantalla.
-Para saltar presiona el boton tactil o barra espaciadora en pc')
-alert('Evita que Sebastian se coma un pene')
+alert('Evita que Sebastian Choque con un Pene')
 
 var canvas;
 var ctx;
@@ -78,8 +76,8 @@ function InicializarJSON(){
 	dinosaurio = {
 		x:PisoX,
 		y:PisoY,
-		width: 70,
-		height:96
+		width: 60,
+		height:70
 	}
 	nubes1 = {
 		x:0,
@@ -96,12 +94,12 @@ function InicializarJSON(){
 }
 function CrearArbol(){
 	if(CrearSigArbol){
-		var aleatorio = Math.random() * ((canvas.width+300) - canvas.width) + canvas.width;
+		var aleatorio = Math.random() * ((canvas.width+400) - canvas.width) + canvas.width;
 		arbol.push({
 			x:aleatorio,
-			y:PisoY-35,
+			y:PisoY,
 			width:50,
-			height:75
+			height:60
 		});
 		CrearSigArbol=false;
 	}
@@ -204,7 +202,7 @@ function RevisarColisiones(){
 				ctx.globalAlpha = 1;
 				ctx.fillStyle ="white";
 				ctx.font = "bold 30px sans-serif";
-				ctx.fillText("Sebastian Brinca Penes Pulse",canvas.width/2 -165,canvas.height/2);
+				ctx.fillText("Muerto, Marica pero Feliz",canvas.width/2 -165,canvas.height/2);
 				ctx.restore();
 			}
 		}
